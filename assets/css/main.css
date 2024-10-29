@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: indianred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    height: 20px;
+    width: 100%; 
+}
+
+.divList {
+    color: white;
+    text-align: center;
+    display: grid;
+    gap: 1em;
+    padding-bottom: 200px;
+    min-width: 300px;
+
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    button {
+        background-color: transparent;
+        border: 1px solid white;
+        width: 100%;
+        height: 32px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: white;
+        color: indianred;
+        cursor: pointer;
+    }
+}
+
+footer {
+    background-color: black;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    gap: 8px;
+
+    .ContactText{
+        h4 {
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        p{
+            font-weight: initial;
+        }
+    }
+
+    .socialMediaIcons, a, i {
+        font-size: 24px;
+        color: white;
+    }
+}
