@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spin</title>
+        <style>
+            body{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .spins{
+                    .stroke{
+                        height: 50px;
+                        width: 50px;
+                        animation-duration: 5000ms;
+                        animation-iteration-count: infinite;       
+                        border-radius: 50%;
+                        position: absolute;
+                        box-sizing: border-box;
+                        border: 5px solid transparent;
+                    }
+                    #sentidoHorario {
+                    animation-name: spinHorario;
+                    border-top-color: #ff07d7;
+                    }
+                    #sentidoAntihorario {
+                        animation-name: spinAntihorario;
+                        border-top-color: #20d4e8;
+                        border-right-color: #20d4e8;
+                    }
+                }
+            }
+            @keyframes spinHorario {
+                from {
+                    transform:rotate(0deg);
+                }
+                to {
+                    transform:rotate(360deg);
+                }
+            }
+
+            @keyframes spinAntihorario {
+                from {
+                    transform:rotate(360deg);
+                }
+                to {
+                    transform:rotate(0deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="spins">
+            <div id="sentidoAntihorario" class="stroke"></div>
+            <div id="sentidoHorario" class="stroke"></div>
+        </div>
+    </body>
+</html>
