@@ -1,0 +1,40 @@
+
+#doubleSpin{
+    .stroke{
+        height: 50px;
+        width: 50px;
+        animation-duration: 3000ms;
+        animation-iteration-count: infinite;       
+        border-radius: 50%;
+        position: absolute;
+        box-sizing: border-box;
+        border: 5px solid transparent;
+    }
+    #sentidoHorario {
+    animation-name: spinHorario;
+    border-top-color: #ff07d7;
+    }
+    #sentidoAntihorario {
+        animation-name: spinAntihorario;
+        border-top-color: #20d4e8;
+        border-right-color: #20d4e8;
+    }
+}
+
+@keyframes spinHorario {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spinAntihorario {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}

@@ -1,0 +1,23 @@
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #f5de16;
+    border-radius: 50%;
+    animation-name: hiding;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hiding {
+    /* from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    } */
+    0%  {box-shadow: 20px 0 #f5de16, -20px 0 #0002;background: #f5de16 }
+    33% {box-shadow: 20px 0 #f5de16, -20px 0 #0002;background: #0002}
+    66% {box-shadow: 20px 0 #0002,-20px 0 #f5de16; background: #0002}
+    100%{box-shadow: 20px 0 #0002,-20px 0 #f5de16; background: #f5de16 }
+}

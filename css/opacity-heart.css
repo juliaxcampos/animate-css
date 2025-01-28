@@ -1,0 +1,40 @@
+#opacityHeart{
+
+    box-sizing: border-box;
+    #heart{
+        margin-top: 40px;
+        height: 24px;
+        width: 24px;
+        background-color: #a200ff;
+        transform: rotate(-45deg);
+        animation-name: hide;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;    
+    }
+    #heart:after, #heart:before{
+        content: "";
+        height: 24px;
+        width: 24px;
+        background-color: #a200ff;
+        border-radius: 50%;
+        position: absolute;
+    }
+    #heart:before {
+        top: -12px;
+    }
+    
+    #heart:after {
+        left: 12px;
+    }
+
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
